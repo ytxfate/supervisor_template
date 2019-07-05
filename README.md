@@ -14,6 +14,17 @@ supervisord
 ```
 supervisord -c /opt/supervisor/supervisord.conf #到指定路径下去找配置文件
 ```
+### 查看状态
+```
+supervisorctl  
+说明：
+1. $CWD/supervisord.conf 也就是当前目录（默认）  
+2. $CWD/etc/supervisord.conf 也就当前目录下的etc目录  
+3. /etc/supervisord.conf 的配置文件
+```
+```
+supervisorctl -c /opt/supervisor/supervisord.conf #到指定路径下去找配置文件
+```
 ### supervisor 在 CentOS7 中开机启动  
 ```
 1. 将 supervisord.service 放到 /usr/lib/systemd/system 目录下  
